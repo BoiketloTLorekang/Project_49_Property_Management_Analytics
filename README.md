@@ -19,7 +19,7 @@ This project delivers an end-to-end data analytics solution evaluating **R2.33M 
 ### 1. Database Schema (MySQL DDL)
 The transactional dataset was modeled into a relational star schema structure in MySQL, establishing strict entity integrity across properties, units, categories, and maintenance logs:
 
-```sql
+sql
 -- 1. Property Dimension
 CREATE TABLE dim_property (
     property_id VARCHAR(20) PRIMARY KEY,
@@ -92,7 +92,7 @@ CREATE TABLE fact_maintenance_records (
 
 ## 📐 Key DAX Calculations
 
-```dax
+dax
 -- Total Maintenance Expenditure
 Total Maintenance Cost = SUM(Maintenance[Cost])
 
